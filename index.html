@@ -8,11 +8,12 @@
   </head>
   <body>
     <nav class="navbar">
-      <div class="logo">Hexa<span>glonk</span></div>
+      <div class="logo">Hexaglonk</div>
       <ul class="nav-links" id="nav-menu">
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#projects">Project</a></li>
+        <li><a href="#services">Services</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
       <div class="hamburger" id="hamburger">
@@ -27,7 +28,7 @@
         <h1>Halo, Saya Hexaglonk</h1>
         <h1><span class="highlight">Digital Marketer</span></h1>
         <p>
-          Halo, saya Hexaglonk. Seorang Digital Marketer yang berfokus pada strategi pemasaran yang terintegrasi mulai dari meningkatkan awareness hingga mendorong konversi. Saya mengubah data menjadi strategi, dan strategi menjadi hasil
+          Seorang Digital Marketer yang berfokus pada strategi pemasaran yang terintegrasi mulai dari meningkatkan awareness hingga mendorong konversi. Saya mengubah data menjadi strategi, dan strategi menjadi hasil
           nyata.
         </p>
       </div>
@@ -66,30 +67,55 @@
           <p>Representasi personal branding sebagai Digital Marketer yang memadukan sisi analitis dan kreatif dalam desain website yang kalem.</p>
         </div>
       </div>
-      <div class="project-card">
-        <div class="card-img">
-          <img src="img/project/company3.png" alt="Company" />
+        <div class="project-card">
+          <div class="card-img">
+            <img src="img/project/company3.png" alt="Company" />
+          </div>
+          <h3>E-commers</h3>
+          <p>Transformasi digital bisnis kuliner lokal melalui strategi konten yang hangat untuk meningkatkan awareness dan daya tarik produk.</p>
         </div>
-        <h3>E-commers</h3>
-        <p>Transformasi digital bisnis kuliner lokal melalui strategi konten yang hangat untuk meningkatkan awareness dan daya tarik produk.</p>
       </div>
+    </div>
     </section>
+
+<section id="services" class="services">
+    <h2>Services</h2>
+    <div class="services-grid">
+        <div class="service-card">
+            <div class="icon">📱</div>
+            <h3>Social Media Ads</h3>
+            <p>Mengelola iklan berbayar di Instagram, Facebook, dan TikTok untuk konversi maksimal.</p>
+        </div>
+        <div class="service-card">
+            <div class="icon">📊</div>
+            <h3>Data Analytics</h3>
+            <p>Membaca data perilaku audiens untuk mengoptimalkan performa pemasaran.</p>
+        </div>
+        <div class="service-card">
+            <div class="icon">✍️</div>
+            <h3>Content Strategy</h3>
+            <p>Membuat narasi kreatif yang membangun koneksi antara brand dengan audiens.</p>
+        </div>
+    </div>
+</section>
 
     <section id="contact">
       <div class="contact main-container">
       <h2>Contact Me</h2>
-      <form class="contact-form" action="">
+      <form class="contact-form" action="" name="submit-to-google-sheet">
         <div>
-          <input type="text" placeholder="Name" name="name">
+          <input type="text" placeholder="Name" name="nama">
         </div>
         <div>
           <input type="email" placeholder="Email" name="email">
         </div>
         <div>
-          <textarea name="message" id="message" placeholder="Message" cols="30" rows="10"></textarea>
+          <textarea name="pesan" id="message" placeholder="Message" cols="30" rows="10"></textarea>
         </div>
         <div>
-          <button class="btn-submit">Send Massage</button>
+          <button type="submit" class="btn-submit" id="submit-btn">
+            <span class="btn-text">Send Message</span>
+            <div class="spinner" id="loader"></div></button>
         </div>
       </form>
     </section>
