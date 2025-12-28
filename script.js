@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", () => {
         submitBtn.classList.remove("loading");
         submitBtn.disabled = false;
 
-        alert("Pesan Terkirim!");
+        alert("Pesan Anda Telah Terkirim Terimakasih!");
         contactForm.reset();
       }, 2000);
     });

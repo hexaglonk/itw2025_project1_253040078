@@ -12,7 +12,6 @@ body {
   background-color: #fff;
 }
 
-/* nav */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -47,7 +46,6 @@ body {
   color: #007bff;
 }
 
-/* hamburger */
 .hamburger {
   display: none;
   cursor: pointer;
@@ -62,10 +60,10 @@ body {
   transition: all 0.3s ease;
 }
 
-/* hero*/
 .hero {
   height: 90vh;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
@@ -78,7 +76,6 @@ body {
   margin-bottom: 1rem;
 }
 
-/* about */
 .about {
   padding: 5rem 10%;
   background: #fff;
@@ -97,7 +94,7 @@ body {
 }
 .about-img img {
   width: 100%;
-  border-radius: 333px;
+  border-radius: 50%;
   box-shadow: 0px 0px 12px #007bff;
 }
 
@@ -110,7 +107,6 @@ body {
   margin-bottom: 1rem;
 }
 
-/* projects */
 .projects {
   padding: 5rem 10%;
   background-color: #f9f9f9;
@@ -126,7 +122,6 @@ body {
 .project-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 2.5rem;
 }
 
 .project-card {
@@ -136,6 +131,7 @@ body {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
   flex-direction: column;
   transition: transform 0.3s ease;
+  margin: 1.5rem;
 }
 
 .project-card:hover {
@@ -147,6 +143,7 @@ body {
   background: #ddd;
   border-radius: 5px;
   margin-bottom: 1rem;
+  overflow: hidden;
 }
 
 .card-img img {
@@ -156,7 +153,6 @@ body {
   display: block;
 }
 
-/* servis */
 .services {
   padding: 5rem 10%;
   background-color: #fcfcfc;
@@ -203,7 +199,6 @@ body {
   color: #666;
 }
 
-/* contact */
 .contact {
   display: grid;
   grid-template-columns: repeat(auto-fit), minmax(350px, 1fr);
@@ -260,14 +255,12 @@ body {
 .btn-submit.loading .btn-text {
   display: none;
 }
-
 @keyframes spin {
   to {
     transform: rotate(360deg);
   }
 }
 
-/* responsiv nav */
 @media (max-width: 768px) {
   .hamburger {
     display: block;
